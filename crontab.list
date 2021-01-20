@@ -52,4 +52,4 @@
 10 12 * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /jd-scripts-docker/resolve.sh; cd /scripts; node /scripts/jd_nh.js | sed 's/^/ 【年货节】/'; "
 0 * * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /jd-scripts-docker/resolve.sh; cd /scripts; node /scripts/jd_nian.js | sed 's/^/ 【京东炸年兽集爆竹 怕有遗漏故多运行几次】/'; "
 30 * * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /jd-scripts-docker/resolve.sh; cd /scripts; node /scripts/jd_nianCollect.js | sed 's/^/ 【专门收集每秒产生的爆竹(1小时运行一次)】/'; "
-30 10 * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /jd-scripts-docker/resolve.sh; cd /scripts; node /scripts/jd_immortal | sed 's/^/ 【京东神仙书院(活动时间:2021-1-20至2021-2-5)】/'; "
+30 10 * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /jd-scripts-docker/resolve.sh; cd /scripts; node /scripts/jd_immortal.js | sed 's/^/ 【京东神仙书院(活动时间:2021-1-20至2021-2-5)】/'; "
