@@ -4,7 +4,7 @@ x-logger: &logger
     driver: "json-file"
     options:
       max-size: "10m"
-      max-file: "3"
+      max-file: "8"
 x-common: &common
   image: jd-scripts:latest
   build:
@@ -32,4 +32,39 @@ services:
     volumes:
     - ./env/all:/all
     - ./env/env3:/env
+    - ./custom.list:/custom.list
+  jd4:
+    <<: [ *logger, *common ]
+    container_name: jd4
+    volumes:
+    - ./env/all:/all
+    - ./env/env4:/env
+    - ./custom.list:/custom.list
+  jd5:
+    <<: [ *logger, *common ]
+    container_name: jd5
+    volumes:
+    - ./env/all:/all
+    - ./env/env5:/env
+    - ./custom.list:/custom.list
+  jd6:
+    <<: [ *logger, *common ]
+    container_name: jd6
+    volumes:
+    - ./env/all:/all
+    - ./env/env6:/env
+    - ./custom.list:/custom.list
+  jd7:
+    <<: [ *logger, *common ]
+    container_name: jd7
+    volumes:
+    - ./env/all:/all
+    - ./env/env7:/env
+    - ./custom.list:/custom.list
+  jd8:
+    <<: [ *logger, *common ]
+    container_name: jd8
+    volumes:
+    - ./env/all:/all
+    - ./env/env8:/env
     - ./custom.list:/custom.list
