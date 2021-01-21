@@ -12,21 +12,6 @@ trap 'cp /jd-scripts-docker/sync.sh /sync' Exit
     mv /jd-scripts-docker_tmp /jd-scripts-docker
   }
 }
-
-
-(
-  exec 2<>/dev/null
-  set -e
-  cd /scripts
-  git pull
-) || {
-  git clone --branch=master https://github.com/shylocks/Loon.git /scripts_tmp
-  [ -d /scripts_tmp ] && {
-    rm -rf /scripts
-    mv /scripts_tmp /scripts
-  }
-}
-
 (
   exec 2<>/dev/null
   set -e
