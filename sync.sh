@@ -16,13 +16,13 @@ trap 'cp /jd-scripts-docker/sync.sh /sync' Exit
 (
   exec 2<>/dev/null
   set -e
-  cd /scripts
+  cd /scripts_loon
   git pull
 ) || {
-  git clone --branch=master https://github.com/shylocks/Loon.git /scripts_tmp
-  [ -d /scripts_tmp ] && {
-    rm -rf /scripts
-    mv /scripts_tmp /scripts
+  git clone --branch=master https://github.com/shylocks/Loon.git /scripts_loon_tmp
+  [ -d /scripts_loon_tmp ] && {
+    rm -rf /scripts_loon
+    mv /scripts_loon_tmp /scripts_loon
   }
 }
 
