@@ -58,7 +58,7 @@
 50 4,5,12 * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /jd-scripts-docker/resolve.sh; cd /scripts; node /scripts/jd_nian_wechat.js | sed 's/^/ 【京东炸年兽小程序】/'; "
 38 12,1 * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /jd-scripts-docker/resolve.sh; cd /scripts; node /scripts/jd_firecrackers.js | sed 's/^/ 【集鞭炮赢京豆】/'; "
 30 10 * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /jd-scripts-docker/resolve.sh; cd /scripts; node /scripts/jd_immortal.js | sed 's/^/ 【京东神仙书院(活动时间:2021-1-20至2021-2-5)】/'; "
-
+5 */2 * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /jd-scripts-docker/resolve.sh; cd /scripts; node /scripts/jd_immortal_answer.js | sed 's/^/ 【京东神仙书院答题(活动时间:2021-1-20至2021-2-5)】/'; "
 
 ##############短期活动_loon##############
 1 12,13 14-31/1 1 * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /jd-scripts-docker/resolve.sh; cd /scripts; node /scripts/jd_bj.js | sed 's/^/ 【宝洁美发屋】/'; "
