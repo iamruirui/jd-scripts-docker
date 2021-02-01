@@ -60,4 +60,7 @@
 1 7 * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /jd-scripts-docker/resolve.sh; cd /scripts; node /scripts/jd_mh.js | sed 's/^/ 【盲盒抽京豆】/'; "
 10 7 * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /jd-scripts-docker/resolve.sh; cd /scripts; node /scripts/jd_ms.js | sed 's/^/ 【京东秒秒币】/'; "
 5 7 * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /jd-scripts-docker/resolve.sh; cd /scripts; node /scripts/jd_xg.js | sed 's/^/ 【小鸽有礼】/'; "
+30 7 * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /jd-scripts-docker/resolve.sh; cd /scripts; node /scripts/jd_xgyl.js | sed 's/^/ 【小鸽有礼2】/'; "
 20 7 * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /jd-scripts-docker/resolve.sh; cd /scripts; node /scripts/jd_super_box.js | sed 's/^/ 【京东超级盒子】/'; "
+20 8,12 * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /jd-scripts-docker/resolve.sh; cd /scripts; node /scripts/jd_newYearMoney.js | sed 's/^/ 【京东压岁钱】/'; "
+0 9,12,16,20 * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /jd-scripts-docker/resolve.sh; cd /scripts; node /scripts/jd_newYearMoney.js | sed 's/^/ 【京东压岁钱抢百元卡】/'; "
