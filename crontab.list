@@ -60,6 +60,7 @@
 27 8 * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /jd-scripts-docker/resolve.sh; cd /scripts; node /scripts/jd_sgmh.js | sed 's/^/ 【闪购盲盒】/'; "
 10 7 * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /jd-scripts-docker/resolve.sh; cd /scripts; node /scripts/jd_ms.js | sed 's/^/ 【京东秒秒币】/'; "
 20 7 * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /jd-scripts-docker/resolve.sh; cd /scripts; node /scripts/jd_super_box.js | sed 's/^/ 【京东超级盒子】/'; "
+# 20 9 * * 6 bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /jd-scripts-docker/resolve.sh; cd /scripts; node /scripts/jd_delCoupon.js | sed 's/^/ 【删除优惠券(默认注释，如需要自己开启，如有误删，已删除的券可以在回收站中还原，慎用)】/'; "
 
 ##############短期活动_loon##############
 
