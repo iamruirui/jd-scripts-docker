@@ -26,19 +26,6 @@ trap 'cp /jd-scripts-docker/sync.sh /sync' Exit
     mv /scripts_tmp /scripts
   }
 }
-(
-  exec 2<>/dev/null
-  set -e
-  cd /loon
-  git checkout .
-  git pull
-) || {
-  git clone --branch=main https://github.com/iamruirui/Loon.git /loon_tmp
-  [ -d /loon_tmp ] && {
-    rm -rf /loon
-    mv /loon_tmp /loon
-  }
-}
 cd /scripts || exit 1
 npm install || npm install --registry=https://registry.npm.taobao.org || exit 1
 [ -f /crontab.list ] && {
